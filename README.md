@@ -3,7 +3,7 @@
 Check it out here: [britneylu.github.io](https://britneylu.github.io/britneylu/)  
 
 ## About Me 💡  
-I'm **Britney Lu**, a **CS major & Econ minor** at Pitt, passionate about **software development, UX/UI, and bridging the digital divide**.  
+I'm **Britney Lu**, a **CS major & Econ minor** at the University of Pittsburgh, passionate about **software development, UX/UI, and bridging the digital divide**.  
 
 ## What's Here? 🚀  
 - **Projects** – Research, hackathons, & coding work  
