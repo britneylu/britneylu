@@ -155,7 +155,7 @@
                     <form id="contact-form">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message (please only press 'Send Message' ONCE!)" required></textarea>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                     <span id="msg"></span>
@@ -200,24 +200,33 @@
     </script>
 
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent default form submission
-            
-            let formData = new FormData(this);
-    
+
+            let form = this;
+            let formData = new FormData(form);
+            let submitButton = form.querySelector("button");
+
+            submitButton.innerText = "Sending...";
+            submitButton.disabled = true;
+
             fetch("https://formsubmit.co/ajax/britneylu100@gmail.com", {
                 method: "POST",
                 body: formData
             })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById("msg").innerHTML = "Message sent successfully!";
-                setTimeout(() => document.getElementById("msg").innerHTML = "", 5000);
-                document.getElementById("contact-form").reset();
-            })
-            .catch(error => {
-                document.getElementById("msg").innerHTML = "Message failed to send. Try again.";
-            });
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("msg").innerHTML = "Message sent successfully!";
+                    setTimeout(() => document.getElementById("msg").innerHTML = "", 5000);
+                    form.reset();
+                    submitButton.innerText = "Send Message";
+                    submitButton.disabled = false;
+                })
+                .catch(error => {
+                    document.getElementById("msg").innerHTML = "Message failed to send. Try again.";
+                    submitButton.innerText = "Send Message";
+                    submitButton.disabled = false;
+                });
         });
     </script>
     
