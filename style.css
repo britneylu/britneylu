@@ -1,3 +1,4 @@
+/*----------- Reset & Base Styles -----------*/
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
     color: #fff;
 }
 
+/*----------- Header -----------*/
 #header {
     width: 100%;
     height: 100vh;
@@ -62,7 +64,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-    width: 100%
+    width: 100%;
 }
 
 .header-text {
@@ -79,7 +81,7 @@ nav ul li a:hover::after {
     color: #1F51FF;
 }
 
-/*-----about----*/
+/*----------- About Section -----------*/
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -156,7 +158,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/*-------services-------*/
+/*----------- Services Section -----------*/
 #services {
     padding: 30px 0;
 }
@@ -180,7 +182,6 @@ nav ul li a:hover::after {
 .services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
-
 }
 
 .services-list div h2 {
@@ -202,7 +203,7 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-/*----------portfolio--------*/
+/*----------- Portfolio Section -----------*/
 #portfolio {
     padding: 50px 0;
 }
@@ -210,18 +211,26 @@ nav ul li a:hover::after {
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    gap: 30px;
     margin-top: 50px;
+    align-items: stretch;
 }
 
 .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .work img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #fff;  /* Optional: Helps light images like Hangman pop */
+    padding: 5px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -288,7 +297,7 @@ nav ul li a:hover::after {
     background: #1F51FF;
 }
 
-/*----------contact--------*/
+/*----------- Contact Section -----------*/
 .contact-left {
     flex-basis: 35%;
 }
@@ -362,7 +371,7 @@ form .btn2 {
     margin-top: 20px;
 }
 
-/*----------css for small screen--------*/
+/*----------- Mobile Styles -----------*/
 nav .fas {
     display: none;
 }
@@ -439,6 +448,10 @@ nav .fas {
 
     .copyright {
         font-size: 14px;
+    }
+
+    .work img {
+        height: 200px;
     }
 }
 
