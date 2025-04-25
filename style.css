@@ -14,7 +14,16 @@ body {
     color: #fff;
 }
 
+/*#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/port_bg.png);
+    background-size: cover;
+    background-position: center;
+}*/
+
 #header {
+    padding-top: 100px; /* Adjust this if nav is taller/shorter */
     width: 100%;
     height: 100vh;
     background-image: url(images/port_bg.png);
@@ -26,11 +35,29 @@ body {
     padding: 10px 10%;
 }
 
-nav {
+/*nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    /* NEW: transparent background */
+    background: rgba(0, 0, 0, 0); /* fully transparent */
+    backdrop-filter: none;       /* no blur — optional */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 10%;
 }
 
 .logo {
@@ -360,6 +387,10 @@ form .btn2 {
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+}
+
+html {
+    scroll-padding-top: 100px; /* Matches the nav height */
 }
 
 /*----------css for small screen--------*/
