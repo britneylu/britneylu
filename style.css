@@ -1,8 +1,7 @@
-/*----------- Reset & Base Styles -----------*/
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Consolas', monospace;
+    font-family: 'Arial', "sans-serif";
     box-sizing: border-box;
 }
 
@@ -15,7 +14,6 @@ body {
     color: #fff;
 }
 
-/*----------- Header -----------*/
 #header {
     width: 100%;
     height: 100vh;
@@ -64,7 +62,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+    width: 100%
 }
 
 .header-text {
@@ -81,7 +79,7 @@ nav ul li a:hover::after {
     color: #1F51FF;
 }
 
-/*----------- About Section -----------*/
+/*-----about----*/
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -158,7 +156,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/*----------- Services Section -----------*/
+/*-------services-------*/
 #services {
     padding: 30px 0;
 }
@@ -182,6 +180,7 @@ nav ul li a:hover::after {
 .services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
+
 }
 
 .services-list div h2 {
@@ -203,7 +202,7 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-/*----------- Portfolio Section -----------*/
+/*----------portfolio--------*/
 #portfolio {
     padding: 50px 0;
 }
@@ -211,26 +210,18 @@ nav ul li a:hover::after {
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-gap: 40px;
     margin-top: 50px;
-    align-items: stretch;
 }
 
 .work {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     border-radius: 10px;
+    position: relative;
     overflow: hidden;
-    height: 100%;
 }
 
 .work img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    background-color: #fff;  /* Optional: Helps light images like Hangman pop */
-    padding: 5px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -297,7 +288,7 @@ nav ul li a:hover::after {
     background: #1F51FF;
 }
 
-/*----------- Contact Section -----------*/
+/*----------contact--------*/
 .contact-left {
     flex-basis: 35%;
 }
@@ -371,7 +362,7 @@ form .btn2 {
     margin-top: 20px;
 }
 
-/*----------- Mobile Styles -----------*/
+/*----------css for small screen--------*/
 nav .fas {
     display: none;
 }
@@ -448,10 +439,6 @@ nav .fas {
 
     .copyright {
         font-size: 14px;
-    }
-
-    .work img {
-        height: 200px;
     }
 }
 
