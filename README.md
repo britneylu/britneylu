@@ -1,13 +1,13 @@
-# Britney Lu's Personal Website 🌐  
+# Britney Lu's Personal Portfolio 🌐  
 
 Check it out here: [britneylu.github.io](https://britneylu.github.io/britneylu/)  
 
 ## About Me 💡  
-I'm **Britney Lu**, a **CS major & Econ minor** at the University of Pittsburgh, passionate about **software development, UX/UI, and bridging the digital divide**.  
+Hi there! I'm **Britney Lu**, a **Computer Science major & Economics minor** at the University of Pittsburgh, passionate about **building intuitive software, exploring UX/UI design, and bringing ideas to life through product development**.  
 
 ## What's Here? 🚀  
 - **Projects** – Research, hackathons, & coding work  
-- **Experience** – Internships & tech tutoring  
+- **Experience** – Internships & volunteering  
 - **Interests** – UX/UI, app dev, & web design  
 
 ## Tech Stack 💻  
